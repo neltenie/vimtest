@@ -11,6 +11,6 @@ r = requests.get(url)
 soup = BeautifulSoup(r.text, 'html.parser')
 
 # soup.find_allを利用して、ヘッドラインのタイトルを取得する
-elems = soup.find_all("a", class_="ipQwMb Q7tWef")
+elems = soup.find_all("a")
 for e in elems:
-     print(e.getText())
+    print(e.getText())
